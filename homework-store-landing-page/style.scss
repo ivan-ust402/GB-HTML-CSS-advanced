@@ -552,11 +552,26 @@
   }
 
   .product__slider {
-    // position: relative;
-    // height: 1313px;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+    position: relative;
     &__photo {
       width: 100%;
       position: relative;
+    }
+
+
+    .left__arrow {
+      position: absolute;
+      top: calc(50% - 388px);
+      left: 0;
+      z-index: 2;
+    }
+    .right__arrow {
+      position: absolute;
+      top: calc(50% - 388px);
+      right: 0;
+      z-index: 2;
     }
 
     &__description {

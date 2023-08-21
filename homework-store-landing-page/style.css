@@ -546,9 +546,26 @@ button:hover {
   font-weight: 700;
 }
 
+.product__slider {
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
+  position: relative;
+}
 .product__slider__photo {
   width: 100%;
   position: relative;
+}
+.product__slider .left__arrow {
+  position: absolute;
+  top: calc(50% - 388px);
+  left: 0;
+  z-index: 2;
+}
+.product__slider .right__arrow {
+  position: absolute;
+  top: calc(50% - 388px);
+  right: 0;
+  z-index: 2;
 }
 .product__slider__description__wrapper {
   position: sticky;
