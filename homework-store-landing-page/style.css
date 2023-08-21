@@ -548,13 +548,19 @@ button:hover {
 
 .product__slider__photo {
   width: 100%;
+  position: relative;
 }
-.product__slider__description {
+.product__slider__description__wrapper {
+  position: sticky;
+  margin-top: -65px;
   padding-top: 65px;
   padding-bottom: 65px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #EAEAEA;
+  background-color: #fff;
 }
 .product__slider__title {
   color: #F16D7F;
@@ -605,6 +611,7 @@ button:hover {
 .product__slider .selection__params .selection__block .selection__param {
   outline: none;
   border: none;
+  background-color: transparent;
 }
 .product__slider__button {
   border: 1px solid rgb(255, 106, 106);
@@ -625,11 +632,12 @@ button:hover {
 
 .product__items {
   padding-bottom: 128px;
+  padding-top: 128px;
 }
 .product__items__content {
   display: grid;
   grid-template-columns: repeat(3, 360px);
-  gap: 30px;
+  gap: 35px;
 }
 
 @media (max-width: 1440px) {
