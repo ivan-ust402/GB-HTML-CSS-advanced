@@ -518,6 +518,43 @@ button:hover {
   background-color: #f16d7f;
 }
 
+.top-head {
+  background-color: #F8F3F4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.top-head__heading {
+  color: #F16D7F;
+  font-size: 24px;
+  font-weight: 400;
+}
+.top-head .breadcrumbs {
+  color: #636363;
+  font-size: 14px;
+}
+.top-head .breadcrumbs__link {
+  color: #636363;
+  font-size: 14px;
+  font-weight: 300;
+}
+.top-head .breadcrumbs__link__site {
+  color: #F16D7F;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product__items {
+  padding-bottom: 128px;
+}
+.product__items__content {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 30px;
+}
+
 @media (max-width: 1440px) {
   .drop__menu {
     left: auto;
