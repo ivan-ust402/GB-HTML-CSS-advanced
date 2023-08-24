@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@500;600;700;800&family=Roboto:ital,wght@0,500;1,100&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    >
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="header center">
       <div class="header__left">
         <a href="#" class="header__link"
           ><img src="img/header/main_logo.svg" alt="logo"
-        /></a>
+        ></a>
         <a href="#" class="header__link"
           ><img src="img/header/search.svg" alt="search"
-        /></a>
+        ></a>
       </div>
       <div class="header__rigth">
         <div class="drop__content">
@@ -149,11 +149,17 @@
         </nav>
     </section>
     <main class="product__slider">  
-            <img  class="product__slider__photo" src="img/slider/Product_photo.jpg" alt="product photo">
-            <img class="left__arrow" src="img/slider/LeftArrow.svg" alt="LeftArrow">
-            <img class="right__arrow" src="img/slider/RightArrow.svg" alt="RightArrow">
-                <div class="product__slider__description center">
-            <div class="product__slider__description__wrapper">
+            <div class="product__slider__image">
+              <img  class="product__slider__photo" src="img/slider/Product_photo.jpg" alt="product photo">
+              <a href="#" class="left__arrow__button">
+                <img class="left__arrow" src="img/slider/LeftArrow.svg" alt="LeftArrow">
+              </a>
+              <a href="#" class="rigth__arrow__button">
+                <img class="rigth__arrow" src="img/slider/RightArrow.svg" alt="RightArrow">
+              </a>
+            </div>
+            <div class="product__slider__description center">
+              <div class="product__slider__description__wrapper">
                 <h3 class="product__slider__title">WOMEN COLLECTION</h3>
                 <img class="product__slider__firstline" src="img/slider/PinkDevider.svg" alt="first__line">
                 <h4 class="product__slider__subtitle">MOSCHINO CHEAP AND CHIC</h4>
@@ -163,8 +169,8 @@
                 <div class="selection__params">
                     <div class="selection__block">
                         <p>CHOOSE COLOR</p>
-                        <select class="selection__param" name="color" id="color">
-                            <option value="1"></option>
+                        <select aria-label="CHOOSE COLOR" class="selection__param" name="color" id="color">
+                            <option label="" value="1"></option>
                         </select>
                     </div>
     
@@ -181,10 +187,10 @@
                         </select>
                     </div>
                 </div>
-                <button class="product__slider__button">
+                <a class="product__slider__button">
                     <img src="img/slider/PinkCart.svg" alt="Pink Cart">
                     <p class="product__slider__button__text">Add to Cart</p>
-                </button>
+                </a>
             </div>
         </div>
     </main>
@@ -193,13 +199,13 @@
         <div class="item">
           <div class="wrapper">
             <div class="item__link__block">
-              <img class="item__image" src="img/items/item4.svg" alt="item4" />
-              <a class="item__link" href="#">
-                <button class="item__button">
+              <img class="item__image" src="img/items/item4.svg" alt="item4">
+              <div class="item__link">
+                <a class="item__button">
                   <img src="img/items/Cart.svg" alt="Cart">
                   <p class="item__button__text">Add to Cart</p>
-                </button>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
           <div class="item__description">
@@ -214,13 +220,13 @@
         <div class="item">
             <div class="wrapper">
               <div class="item__link__block">
-                <img class="item__image" src="img/items/item3.svg" alt="item3" />
-                <a class="item__link" href="#">
-                  <button class="item__button">
+                <img class="item__image" src="img/items/item3.svg" alt="item3">
+                <div class="item__link">
+                  <a class="item__button">
                     <img src="img/items/Cart.svg" alt="Cart">
                     <p class="item__button__text">Add to Cart</p>
-                  </button>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="item__description">
@@ -235,13 +241,13 @@
         <div class="item">
           <div class="wrapper">
             <div class="item__link__block">
-              <img class="item__image" src="img/items/item6.svg" alt="item6" />
-              <a class="item__link" href="#">
-                <button class="item__button">
+              <img class="item__image" src="img/items/item6.svg" alt="item6">
+              <div class="item__link">
+                <a class="item__button">
                   <img src="img/items/Cart.svg" alt="Cart">
                   <p class="item__button__text">Add to Cart</p>
-                </button>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
           <div class="item__description">
@@ -256,6 +262,23 @@
       </div>
     </section>
     <footer class="footer">
+      <section class="advantages center">
+        <div class="advantages__card">
+          <img class="advantages__icon" src="img/footer/advantages/icon-1.svg" alt="delivery">
+          <h3 class="advantages__title">Free Delivery</h3>
+          <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+        <div class="advantages__card">
+          <img class="advantages__icon" src="img/footer/advantages/icon-2.svg" alt="discounts">
+          <h3 class="advantages__title">Sales & discounts</h3>
+          <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+        <div class="advantages__card">
+          <img class="advantages__icon" src="img/footer/advantages/icon-3.svg" alt="assurance">
+          <h3 class="advantages__title">Quality assurance</h3>
+          <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+      </section>
       <section class="subscription center">
         <div class="subscription__quote">
           <img src="img/footer/subscription/photo.svg" alt="support" class="subscription__icon">
@@ -263,7 +286,7 @@
             “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="subscription__text__italic"> a pulvinar purus condimentum</span>“
           </p>
         </div>
-        <div class="subscription__form">
+        <div class="subscription__content">
           <h2 class="subscription__title">SUBSCRIBE</h2>
           <p class="subscription__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
           <form class="subscription__form" action="#">
@@ -272,7 +295,7 @@
           </form>
         </div>
       </section>
-      <section class="contacts center">
+      <div class="contacts center">
         <div class="contacts__copyrighting">
           <p class="copirighting__text"><span>&#169;</span> 2022  Brand  All Rights Reserved.</p>
         </div>
@@ -290,7 +313,7 @@
             <img class="messenger__icon" src="img/footer/contacts/twitter.svg" alt="twitter">
           </a>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
