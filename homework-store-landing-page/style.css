@@ -78,7 +78,7 @@ button:hover {
   margin-bottom: 12px;
 }
 .header__rigth .drop__content .drop__menu .menu__item__title .catalog__link {
-  color: #f16d7f;
+  color: #F16D7F;
   font-size: 14px;
   font-weight: 400;
 }
@@ -124,21 +124,21 @@ button:hover {
   margin-left: 0;
 }
 .top .custom__header .top__content .top__title {
-  color: #222;
+  color: #000;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
 .top .custom__header .top__content .top__subtitle {
-  color: #222;
+  color: #000;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .top .custom__header .top__content .top__subtitle .highlighting {
-  color: #f16d7f;
+  color: #F16D7F;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -152,6 +152,7 @@ button:hover {
   justify-content: center;
   padding-top: 65px;
   padding-bottom: 96px;
+  background: #fff;
 }
 .categories .category__card {
   display: grid;
@@ -172,7 +173,7 @@ button:hover {
   font-weight: 400;
 }
 .categories .category__card .category__title {
-  color: #f16d7f;
+  color: #F16D7F;
   font-size: 24px;
   font-weight: 700;
 }
@@ -206,9 +207,10 @@ button:hover {
   flex-direction: column;
   align-items: center;
   padding-bottom: 60px;
+  background: #fff;
 }
 .items__title {
-  color: #222;
+  color: #000;
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 6px;
@@ -226,23 +228,12 @@ button:hover {
   margin-bottom: 48px;
 }
 .items__content .item {
-  background-color: rgb(248, 248, 248);
+  background-color: #F8F8F8;
 }
 .items__content .item .wrapper {
   position: relative;
-  /* .item__link__block:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-  } */
 }
 .items__content .item .wrapper .item__link__block {
-  /* background-image: url("img/items/item2.svg"); */
   background: rgb(0, 0, 0);
   background-size: cover;
   width: 359px;
@@ -299,24 +290,24 @@ button:hover {
   padding-bottom: 16px;
 }
 .items__content .item__description .price {
-  color: #f16d7f;
+  color: #F16D7F;
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 24px;
 }
 .items .more {
-  color: rgb(255, 106, 106);
-  border: 1px solid rgb(255, 106, 106);
+  color: #F26376;
+  border: 1px solid #FF6A6A;
   padding-top: 15px;
   font-size: 16px;
   padding-bottom: 14px;
   padding-left: 39px;
   padding-right: 39px;
-  background-color: #fff;
+  background-color: inherit;
   transition: all 0.3s;
 }
 .items .more:hover {
-  background-color: #f16d7f;
+  background-color: #F16D7F;
   border-color: #ff6a6a;
   color: #fff;
 }
@@ -324,7 +315,7 @@ button:hover {
 .footer .advantages {
   padding-top: 103px;
   padding-bottom: 104px;
-  background: #222224;
+  background: #222;
   display: flex;
   gap: 30px;
   color: #fbfbfb;
@@ -360,11 +351,10 @@ button:hover {
   margin-top: 30px;
   width: 360px;
   height: 99px;
-  color: #222224;
+  color: #000;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
-  color: #222224;
 }
 .footer .subscription__quote .subscription__text__italic {
   font-size: 20px;
@@ -376,7 +366,7 @@ button:hover {
   position: relative;
 }
 .footer .subscription__content .subscription__title {
-  color: #222224;
+  color: #000;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -384,7 +374,7 @@ button:hover {
   margin-top: 53px;
 }
 .footer .subscription__content .subscription__subtitle {
-  color: #222224;
+  color: #000;
   font-size: 18px;
   font-weight: 400;
   line-height: 167.2%;
@@ -413,7 +403,7 @@ button:hover {
   box-sizing: border-box;
   width: 100px;
   height: 49px;
-  background-color: #f16d7f;
+  background-color: #F16D7F;
   border: none;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -439,7 +429,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222224;
+  background-color: #222;
 }
 .footer .contacts__copyrighting {
   color: #fbfbfb;
@@ -461,7 +451,7 @@ button:hover {
   transition: background-color 0.3s;
 }
 .footer .contacts__messengers .messenger__wrapper:hover {
-  background-color: #f16d7f;
+  background-color: #F16D7F;
 }
 
 .top-head {
@@ -494,6 +484,7 @@ button:hover {
 
 .product__slider {
   position: relative;
+  background-color: #fff;
 }
 .product__slider__image {
   width: 100%;
@@ -578,7 +569,7 @@ button:hover {
   background-color: transparent;
 }
 .product__slider__button {
-  border: 1px solid rgb(255, 106, 106);
+  border: 1px solid #FF6A6A;
   display: flex;
   gap: 23px;
   align-items: center;
@@ -597,6 +588,7 @@ button:hover {
 .product__items {
   padding-bottom: 128px;
   padding-top: 128px;
+  background: #fff;
 }
 .product__items__content {
   display: grid;
@@ -604,7 +596,7 @@ button:hover {
   gap: 35px;
 }
 .product__items__content .item {
-  background-color: rgb(248, 248, 248);
+  background-color: #F8F8F8;
 }
 .product__items__content .item .wrapper {
   position: relative;
@@ -666,7 +658,7 @@ button:hover {
   padding-bottom: 16px;
 }
 .product__items__content .item__description .price {
-  color: #f16d7f;
+  color: #F16D7F;
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 24px;
@@ -792,7 +784,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222224;
+    background-color: #222;
   }
 }
 @media (max-width: 767px) {

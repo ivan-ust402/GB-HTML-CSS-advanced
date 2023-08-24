@@ -1,3 +1,9 @@
+$colorSelectSite: #F16D7F;
+$colorBackgroundFirst: #222;
+$colorBackgroundSecond: #fff;
+$colorTitleBasic: #000;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +35,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background: #222;
+    background: $colorBackgroundFirst;
     padding-top: 18px;
     padding-bottom: 19px;
     position: relative;
@@ -50,7 +56,7 @@
           visibility: hidden;
           opacity: 0;
           z-index: -1;
-          background: #fff;
+          background: $colorBackgroundSecond;
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           list-style-type: none;
           width: 232px;
@@ -82,7 +88,7 @@
               margin-bottom: 12px;
 
               .catalog__link {
-                color: #f16d7f;
+                color: $colorSelectSite;
                 font-size: 14px;
                 font-weight: 400;
               }
@@ -143,7 +149,7 @@
 
       .top__content {
         .top__title {
-          color: #222;
+          color: $colorTitleBasic;
           font-size: 48px;
           font-style: normal;
           font-weight: 900;
@@ -151,14 +157,14 @@
         }
         
         .top__subtitle {
-          color: #222;
+          color: $colorTitleBasic;
           font-size: 32px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
 
           .highlighting {
-            color: #f16d7f;
+            color: $colorSelectSite;
             font-size: 32px;
             font-style: normal;
             font-weight: 700;
@@ -176,6 +182,7 @@
     justify-content: center;
     padding-top: 65px;
     padding-bottom: 96px;
+    background: $colorBackgroundSecond;
 
     .category__card {
       display: grid;
@@ -199,7 +206,7 @@
       }
       
       .category__title {
-        color: #f16d7f;
+        color: $colorSelectSite;
         font-size: 24px;
         font-weight: 700;
       }
@@ -239,9 +246,10 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px;
+    background: $colorBackgroundSecond;
 
     &__title {
-      color: #222;
+      color: $colorTitleBasic;
       font-size: 30px;
       font-weight: 400;
       margin-bottom: 6px;
@@ -261,13 +269,12 @@
       margin-bottom: 48px;
 
       .item {
-        background-color: rgba(248, 248, 248, 1);
+        background-color: #F8F8F8;;
 
         .wrapper {
           position: relative;
 
           .item__link__block {
-            /* background-image: url("img/items/item2.svg"); */
             background: rgb(0, 0, 0);
             background-size: cover;
             width: 359px;
@@ -304,17 +311,6 @@
               }
             }
           }
-          
-          /* .item__link__block:hover::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 2;
-          } */
 
           .item__link__block:hover .item__image {
             opacity: 0.5;
@@ -330,7 +326,7 @@
           padding-left: 16px;
     
           .item__title {
-            color: #000;
+            color: $colorTitleBasic;
             font-size: 13px;
             font-weight: 400;
             padding-top: 25px;
@@ -345,7 +341,7 @@
           }
     
           .price {
-            color: #f16d7f;
+            color: $colorSelectSite;
             font-size: 16px;
             font-weight: 400;
             padding-bottom: 24px;
@@ -355,19 +351,19 @@
     }
 
     .more {
-      color: rgba(255, 106, 106, 1);
-      border: 1px solid rgba(255, 106, 106, 1);
+      color: #F26376;
+      border: 1px solid #FF6A6A;
       padding-top: 15px;
       font-size: 16px;
       padding-bottom: 14px;
       padding-left: 39px;
       padding-right: 39px;
-      background-color: #fff;
+      background-color: inherit;
       transition: all 0.3s;
     }
     
     .more:hover {
-      background-color: #f16d7f;
+      background-color: $colorSelectSite;
       border-color: #ff6a6a;
       color: #fff;
     }
@@ -377,7 +373,7 @@
     .advantages {
       padding-top: 103px;
       padding-bottom: 104px;
-      background: #222224;
+      background: $colorBackgroundFirst;
       display: flex;
       gap: 30px;
       color: #fbfbfb;
@@ -418,11 +414,10 @@
           margin-top: 30px;
           width: 360px;
           height: 99px;
-          color: #222224;
+          color: $colorTitleBasic;
           text-align: center;
           font-size: 20px;
           font-weight: 400;
-          color: #222224;
         }
         
         .subscription__text__italic {
@@ -437,7 +432,7 @@
         position: relative;
 
         .subscription__title {
-          color: #222224;
+          color: $colorTitleBasic;
           text-align: center;
           font-size: 24px;
           font-weight: 700;
@@ -446,7 +441,7 @@
         }
         
         .subscription__subtitle {
-          color: #222224;
+          color: $colorTitleBasic;
           font-size: 18px;
           font-weight: 400;
           line-height: 167.2%;
@@ -476,7 +471,7 @@
             box-sizing: border-box;
             width: 100px;
             height: 49px;
-            background-color: #f16d7f;
+            background-color: $colorSelectSite;
             border: none;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
@@ -508,7 +503,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #222224;
+      background-color: $colorBackgroundFirst;
 
       &__copyrighting {
         color: #fbfbfb;
@@ -527,12 +522,12 @@
           align-items: center;
           width: 32px;
           height: 32px;
-          background-color: #fff;
+          background-color: $colorBackgroundSecond;
           transition: background-color 0.3s;
         }
         
         .messenger__wrapper:hover {
-          background-color: #f16d7f;
+          background-color: $colorSelectSite;
         }
       }
     }
@@ -548,7 +543,7 @@
     text-align: center;
 
     &__heading {
-      color: #F16D7F;
+      color: $colorSelectSite;
       font-size: 24px;
       font-weight: 400;
     }
@@ -563,7 +558,7 @@
       }
 
       &__link__site {
-        color: #F16D7F;
+        color: $colorSelectSite;
         font-size: 14px;
         font-weight: 700;
       }
@@ -574,6 +569,7 @@
     // padding-left: calc(50% - 800px);
     // padding-right: calc(50% - 800px);
     position: relative;
+    background-color: $colorBackgroundSecond;
 
     &__image {
       width: 100%;
@@ -607,11 +603,11 @@
         flex-direction: column;
         align-items: center;
         border: 1px solid #EAEAEA;
-        background-color: #fff;
+        background-color: $colorBackgroundSecond;
       }
     }
     &__title {
-      color: #F16D7F;
+      color: $colorSelectSite;
       font-size: 14px;
       font-weight: 300;
       margin-bottom: 12px;
@@ -664,7 +660,7 @@
 
     }
     &__button {
-      border: 1px solid rgba(255, 106, 106, 1);
+      border: 1px solid #FF6A6A;
       display: flex;
       gap: 23px;
       align-items: center;
@@ -685,14 +681,15 @@
   .product__items {
     padding-bottom: 128px;
     padding-top: 128px;
+    background: $colorBackgroundSecond;
 
     &__content {
       display: grid;
       grid-template-columns: repeat(3, 360px);
       gap: 35px;
+      
       .item {
-        background-color: rgba(248, 248, 248, 1);
-
+        background-color: #F8F8F8;
         .wrapper {
           position: relative;
 
@@ -748,7 +745,7 @@
           padding-left: 16px;
     
           .item__title {
-            color: #000;
+            color: $colorTitleBasic;
             font-size: 13px;
             font-weight: 400;
             padding-top: 25px;
@@ -763,7 +760,7 @@
           }
     
           .price {
-            color: #f16d7f;
+            color: $colorSelectSite;
             font-size: 16px;
             font-weight: 400;
             padding-bottom: 24px;
@@ -932,7 +929,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #222224;
+        background-color: $colorBackgroundFirst;
       }
     }
   }
@@ -1146,7 +1143,5 @@
         background-color: #222224;
       }
     }
-
-
   }
   
