@@ -322,7 +322,7 @@ button:hover {
   color: #fff;
 }
 
-.advantages {
+.footer .advantages {
   padding-top: 103px;
   padding-bottom: 104px;
   background: #222224;
@@ -330,27 +330,22 @@ button:hover {
   gap: 30px;
   color: #fbfbfb;
 }
-
-.advantages__card {
+.footer .advantages .advantages__card {
   text-align: center;
 }
-
-.advantages__icon {
+.footer .advantages .advantages__card .advantages__icon {
   margin-bottom: 28px;
 }
-
-.advantages__title {
+.footer .advantages .advantages__card .advantages__title {
   margin-bottom: 16px;
   font-size: 19.96px;
   font-weight: 400;
 }
-
-.advantages__text {
+.footer .advantages .advantages__card .advantages__text {
   font-size: 13.972px;
   font-weight: 300;
 }
-
-.subscription {
+.footer .subscription {
   background-image: url("img/footer/subscription/photo subscribe.jpg");
   background-size: cover;
   padding-top: 97px;
@@ -359,12 +354,10 @@ button:hover {
   gap: 327px;
   grid-template-columns: repeat(2, 360px);
 }
-
-.subscription__quote {
+.footer .subscription .subscription__quote {
   text-align: center;
 }
-
-.subscription__text {
+.footer .subscription .subscription__quote .subscription__text {
   margin-top: 30px;
   width: 360px;
   height: 99px;
@@ -374,19 +367,16 @@ button:hover {
   font-weight: 400;
   color: #222224;
 }
-
-.subscription__text__italic {
+.footer .subscription .subscription__quote .subscription__text__italic {
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
 }
-
-.subscription__form {
+.footer .subscription .subscription__content {
   text-align: center;
   position: relative;
 }
-
-.subscription__title {
+.footer .subscription .subscription__content .subscription__title {
   color: #222224;
   text-align: center;
   font-size: 24px;
@@ -394,16 +384,17 @@ button:hover {
   line-height: 167.2%; /* 40.128px */
   margin-top: 53px;
 }
-
-.subscription__subtitle {
+.footer .subscription .subscription__content .subscription__subtitle {
   color: #222224;
   font-size: 18px;
   font-weight: 400;
   line-height: 167.2%;
   margin-bottom: 32px;
 }
-
-.subscription__email {
+.footer .subscription .subscription__content .subscription__form {
+  position: relative;
+}
+.footer .subscription .subscription__content .subscription__form .subscription__email {
   box-sizing: border-box;
   width: 356px;
   height: 49px;
@@ -419,8 +410,7 @@ button:hover {
   opacity: 0.671;
   outline: none;
 }
-
-.subscription__button {
+.footer .subscription .subscription__content .subscription__form .subscription__button {
   box-sizing: border-box;
   width: 100px;
   height: 49px;
@@ -441,12 +431,10 @@ button:hover {
   top: 0;
   right: 0;
 }
-
-.subscription__button:hover {
+.footer .subscription .subscription__content .subscription__form .subscription__button:hover {
   background-color: #d73c3c;
 }
-
-.contacts {
+.footer .contacts {
   padding-top: 24px;
   padding-bottom: 23px;
   display: flex;
@@ -454,20 +442,17 @@ button:hover {
   align-items: center;
   background-color: #222224;
 }
-
-.contacts__copyrighting {
+.footer .contacts .contacts__copyrighting {
   color: #fbfbfb;
   font-size: 16px;
   font-weight: 400;
 }
-
-.contacts__messengers {
+.footer .contacts .contacts__messengers {
   display: flex;
   flex-direction: row;
   gap: 7.29px;
 }
-
-.messenger__wrapper {
+.footer .contacts .contacts__messengers .messenger__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,8 +461,7 @@ button:hover {
   background-color: #fff;
   transition: background-color 0.3s;
 }
-
-.messenger__wrapper:hover {
+.footer .contacts .contacts__messengers .messenger__wrapper:hover {
   background-color: #f16d7f;
 }
 
