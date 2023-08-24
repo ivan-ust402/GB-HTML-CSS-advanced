@@ -45,7 +45,6 @@ button:hover {
   align-items: center;
 }
 .header__rigth .drop__content .drop__menu {
-  position: relative;
   visibility: hidden;
   opacity: 0;
   z-index: -1;
@@ -75,22 +74,22 @@ button:hover {
 .header__rigth .drop__content .drop__menu .menu__item {
   margin-bottom: 20px;
 }
-.header__rigth .drop__content .drop__menu .menu__item .menu__item__title {
+.header__rigth .drop__content .drop__menu .menu__item__title {
   margin-bottom: 12px;
 }
-.header__rigth .drop__content .drop__menu .menu__item .menu__item__title .catalog__link {
+.header__rigth .drop__content .drop__menu .menu__item__title .catalog__link {
   color: #f16d7f;
   font-size: 14px;
   font-weight: 400;
 }
-.header__rigth .drop__content .drop__menu .menu__item .menu__item__list {
+.header__rigth .drop__content .drop__menu .menu__item__list {
   list-style-type: none;
 }
-.header__rigth .drop__content .drop__menu .menu__item .menu__item__list .menu__subitem {
+.header__rigth .drop__content .drop__menu .menu__item__list .menu__subitem {
   margin-bottom: 11px;
   margin-left: 21.5px;
 }
-.header__rigth .drop__content .drop__menu .menu__item .menu__item__list .menu__subitem .chapter__link {
+.header__rigth .drop__content .drop__menu .menu__item__list .menu__subitem .chapter__link {
   color: #6f6e6e;
   font-size: 14px;
   font-weight: 400;
@@ -208,28 +207,28 @@ button:hover {
   align-items: center;
   padding-bottom: 60px;
 }
-.items .items__title {
+.items__title {
   color: #222;
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 6px;
 }
-.items .items__text {
+.items__text {
   color: #9f9f9f;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 48px;
 }
-.items .items__content {
+.items__content {
   display: grid;
   grid-template-columns: repeat(3, 360px);
   gap: 30px;
   margin-bottom: 48px;
 }
-.items .items__content .item {
+.items__content .item {
   background-color: rgb(248, 248, 248);
 }
-.items .items__content .item .wrapper {
+.items__content .item .wrapper {
   position: relative;
   /* .item__link__block:hover::after {
     content: "";
@@ -242,7 +241,7 @@ button:hover {
     z-index: 2;
   } */
 }
-.items .items__content .item .wrapper .item__link__block {
+.items__content .item .wrapper .item__link__block {
   /* background-image: url("img/items/item2.svg"); */
   background: rgb(0, 0, 0);
   background-size: cover;
@@ -252,16 +251,16 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-.items .items__content .item .wrapper .item__link__block .item__image {
+.items__content .item .wrapper .item__link__block .item__image {
   position: absolute;
   transition: all 0.3s ease-in;
 }
-.items .items__content .item .wrapper .item__link__block .item__link {
+.items__content .item .wrapper .item__link__block .item__link {
   visibility: hidden;
   z-index: -1;
   transition: all 0.2s ease-in;
 }
-.items .items__content .item .wrapper .item__link__block .item__link .item__button {
+.items__content .item .wrapper .item__link__block .item__link .item__button {
   border: 1px solid white;
   background-color: transparent;
   display: flex;
@@ -273,33 +272,33 @@ button:hover {
   padding-top: 11.5px;
   padding-bottom: 9px;
 }
-.items .items__content .item .wrapper .item__link__block .item__link .item__button .item__button__text {
+.items__content .item .wrapper .item__link__block .item__link .item__button .item__button__text {
   color: white;
 }
-.items .items__content .item .wrapper .item__link__block:hover .item__image {
+.items__content .item .wrapper .item__link__block:hover .item__image {
   opacity: 0.5;
 }
-.items .items__content .item .wrapper .item__link__block:hover .item__link {
+.items__content .item .wrapper .item__link__block:hover .item__link {
   visibility: visible;
   z-index: 4;
 }
-.items .items__content .item .item__description {
+.items__content .item__description {
   padding-left: 16px;
 }
-.items .items__content .item .item__description .item__title {
+.items__content .item__description .item__title {
   color: #000;
   font-size: 13px;
   font-weight: 400;
   padding-top: 25px;
   padding-bottom: 16px;
 }
-.items .items__content .item .item__description .item__text {
+.items__content .item__description .item__text {
   color: #5d5d5d;
   font-size: 14px;
   font-weight: 300;
   padding-bottom: 16px;
 }
-.items .items__content .item .item__description .price {
+.items__content .item__description .price {
   color: #f16d7f;
   font-size: 16px;
   font-weight: 400;
@@ -330,18 +329,18 @@ button:hover {
   gap: 30px;
   color: #fbfbfb;
 }
-.footer .advantages .advantages__card {
+.footer .advantages__card {
   text-align: center;
 }
-.footer .advantages .advantages__card .advantages__icon {
+.footer .advantages__card .advantages__icon {
   margin-bottom: 28px;
 }
-.footer .advantages .advantages__card .advantages__title {
+.footer .advantages__card .advantages__title {
   margin-bottom: 16px;
   font-size: 19.96px;
   font-weight: 400;
 }
-.footer .advantages .advantages__card .advantages__text {
+.footer .advantages__card .advantages__text {
   font-size: 13.972px;
   font-weight: 300;
 }
@@ -354,10 +353,10 @@ button:hover {
   gap: 327px;
   grid-template-columns: repeat(2, 360px);
 }
-.footer .subscription .subscription__quote {
+.footer .subscription__quote {
   text-align: center;
 }
-.footer .subscription .subscription__quote .subscription__text {
+.footer .subscription__quote .subscription__text {
   margin-top: 30px;
   width: 360px;
   height: 99px;
@@ -367,16 +366,16 @@ button:hover {
   font-weight: 400;
   color: #222224;
 }
-.footer .subscription .subscription__quote .subscription__text__italic {
+.footer .subscription__quote .subscription__text__italic {
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
 }
-.footer .subscription .subscription__content {
+.footer .subscription__content {
   text-align: center;
   position: relative;
 }
-.footer .subscription .subscription__content .subscription__title {
+.footer .subscription__content .subscription__title {
   color: #222224;
   text-align: center;
   font-size: 24px;
@@ -384,17 +383,17 @@ button:hover {
   line-height: 167.2%; /* 40.128px */
   margin-top: 53px;
 }
-.footer .subscription .subscription__content .subscription__subtitle {
+.footer .subscription__content .subscription__subtitle {
   color: #222224;
   font-size: 18px;
   font-weight: 400;
   line-height: 167.2%;
   margin-bottom: 32px;
 }
-.footer .subscription .subscription__content .subscription__form {
+.footer .subscription__content .subscription__form {
   position: relative;
 }
-.footer .subscription .subscription__content .subscription__form .subscription__email {
+.footer .subscription__content .subscription__form .subscription__email {
   box-sizing: border-box;
   width: 356px;
   height: 49px;
@@ -410,7 +409,7 @@ button:hover {
   opacity: 0.671;
   outline: none;
 }
-.footer .subscription .subscription__content .subscription__form .subscription__button {
+.footer .subscription__content .subscription__form .subscription__button {
   box-sizing: border-box;
   width: 100px;
   height: 49px;
@@ -431,7 +430,7 @@ button:hover {
   top: 0;
   right: 0;
 }
-.footer .subscription .subscription__content .subscription__form .subscription__button:hover {
+.footer .subscription__content .subscription__form .subscription__button:hover {
   background-color: #d73c3c;
 }
 .footer .contacts {
@@ -442,17 +441,17 @@ button:hover {
   align-items: center;
   background-color: #222224;
 }
-.footer .contacts .contacts__copyrighting {
+.footer .contacts__copyrighting {
   color: #fbfbfb;
   font-size: 16px;
   font-weight: 400;
 }
-.footer .contacts .contacts__messengers {
+.footer .contacts__messengers {
   display: flex;
   flex-direction: row;
   gap: 7.29px;
 }
-.footer .contacts .contacts__messengers .messenger__wrapper {
+.footer .contacts__messengers .messenger__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,7 +460,7 @@ button:hover {
   background-color: #fff;
   transition: background-color 0.3s;
 }
-.footer .contacts .contacts__messengers .messenger__wrapper:hover {
+.footer .contacts__messengers .messenger__wrapper:hover {
   background-color: #f16d7f;
 }
 
@@ -605,7 +604,7 @@ button:hover {
 }
 
 @media (max-width: 1440px) {
-  .drop__menu {
+  .header__rigth .drop__content .drop__menu {
     left: auto;
   }
 }
@@ -617,24 +616,25 @@ button:hover {
   .top {
     gap: 39px;
   }
-  .custom__header {
+  .top .main__picture {
+    width: 386px;
+    height: 368px;
+    margin-left: -112px;
+    margin-top: 15px;
+  }
+  .top .custom__header {
     /* display: flex;
     gap: 16px; */
     margin-top: 138px;
     margin-bottom: 151px;
   }
-  .main_picture {
-    width: 386px;
-    height: 368px;
-    margin-left: -112px;
-  }
-  .top__title {
+  .top .custom__header .top__content .top__title {
     font-size: 44px;
   }
-  .top__subtitle {
+  .top .custom__header .top__content .top__subtitle {
     font-size: 24px;
   }
-  .highlighting {
+  .top .custom__header .top__content .top__subtitle .highlighting {
     font-size: 24px;
   }
   .categories {
@@ -643,37 +643,37 @@ button:hover {
     padding-top: 65px;
     padding-bottom: 109px;
   }
-  .card1 {
-    width: 232px;
-    height: 168px;
-  }
-  .card2 {
-    width: 232px;
-    height: 168px;
-  }
-  .card3 {
-    width: 232px;
-    height: 168px;
-  }
-  .card4 {
-    width: 734.6px;
-    height: 116px;
-  }
-  .card__content {
+  .categories .category__card .card__content {
     padding-top: 59px;
     padding-bottom: 59px;
   }
-  .card__content__long__card {
+  .categories .category__card .card__content__long__card {
     padding-top: 33px;
     padding-bottom: 33px;
   }
-  .category__subtitle {
+  .categories .category__card .category__subtitle {
     font-size: 16px;
     font-weight: 400;
   }
-  .category__title {
+  .categories .category__card .category__title {
     font-size: 24px;
     font-weight: 700;
+  }
+  .categories .card1 {
+    width: 232px;
+    height: 168px;
+  }
+  .categories .card2 {
+    width: 232px;
+    height: 168px;
+  }
+  .categories .card3 {
+    width: 232px;
+    height: 168px;
+  }
+  .categories .card4 {
+    width: 734.6px;
+    height: 116px;
   }
   .items {
     padding-bottom: 70.5px;
@@ -689,20 +689,20 @@ button:hover {
     gap: 16px;
     margin-bottom: 32.5px;
   }
-  .item__title {
+  .items__content .item__description .item__title {
     font-size: 13px;
     padding-top: 25px;
     padding-bottom: 13px;
   }
-  .item__text {
+  .items__content .item__description .item__text {
     font-size: 14px;
     padding-bottom: 18px;
   }
-  .price {
+  .items__content .item__description .price {
     font-size: 16px;
     padding-bottom: 20px;
   }
-  .advantages {
+  .footer .advantages {
     padding-top: 48px;
     padding-bottom: 64px;
     display: grid;
@@ -710,14 +710,14 @@ button:hover {
     justify-content: center;
     grid-template-columns: repeat(1, 360px);
   }
-  .subscription {
+  .footer .subscription {
     padding-top: 64px;
     padding-bottom: 140px;
     gap: 48px;
     grid-template-columns: repeat(1, 360px);
     justify-content: center;
   }
-  .contacts {
+  .footer .contacts {
     padding-top: 24px;
     padding-bottom: 23px;
     display: flex;
@@ -731,42 +731,42 @@ button:hover {
     padding-left: calc(50% - 187.5px);
     padding-right: calc(50% - 187.5px);
   }
-  .header-left {
+  .header__left {
     margin-left: 16px;
   }
-  .header-right {
+  .header__rigth {
     margin-right: 16px;
   }
-  .drop__menu {
+  .header__rigth .drop__content .drop__menu {
     left: 50%;
   }
-  .user {
+  .header__rigth .user {
     display: none;
   }
-  .backet {
+  .header__rigth .backet {
     display: none;
   }
-  .main_picture {
+  .top .main__picture {
     display: none;
   }
-  .custom__header {
+  .top .custom__header {
     margin-top: 148px;
     margin-bottom: 149px;
     gap: 15px;
     align-items: center;
     margin-left: 56px;
   }
-  .top_image {
+  .top .custom__header .top__image {
     width: 12px;
     height: 61px;
   }
-  .top__title {
+  .top .custom__header .top__content .top__title {
     font-size: 38px;
   }
-  .top__subtitle {
+  .top .custom__header .top__content .top__subtitle {
     font-size: 20px;
   }
-  .highlighting {
+  .top .custom__header .top__content .top__subtitle .highlighting {
     font-size: 20px;
   }
   .categories {
@@ -776,39 +776,39 @@ button:hover {
     padding-bottom: 109px;
     margin-left: 16px;
   }
-  .card1 {
+  .categories .category__card .card__content {
+    padding-top: 98px;
+    padding-bottom: 99px;
+  }
+  .categories .category__card .card__content__long__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .categories .category__card .category__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .categories .category__card .category__title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .categories .card1 {
     width: 343px;
     height: 247px;
   }
-  .card2 {
+  .categories .card2 {
     width: 343px;
     height: 247px;
   }
-  .card3 {
+  .categories .card3 {
     width: 343px;
     height: 247px;
   }
-  .card4 {
+  .categories .card4 {
     width: 343px;
     height: 111px;
     background-size: 734.6px 116px;
     background-position: center;
-  }
-  .card__content {
-    padding-top: 98px;
-    padding-bottom: 99px;
-  }
-  .card__content__long__card {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .category__subtitle {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .category__title {
-    font-size: 24px;
-    font-weight: 700;
   }
   .items {
     padding-bottom: 85px;
@@ -824,52 +824,52 @@ button:hover {
     grid-template-columns: repeat(1, 360px);
     margin-bottom: 41px;
   }
-  .item__title {
+  .items__content .item__description__title {
     font-size: 13px;
     padding-top: 25px;
     padding-bottom: 13px;
   }
-  .item__text {
+  .items__content .item__description__text {
     font-size: 14px;
     padding-bottom: 18px;
   }
-  .price {
+  .items__content .item__description .price {
     font-size: 16px;
     padding-bottom: 20px;
   }
-  .advantages {
+  .footer .advantages {
     padding-top: 48px;
     padding-bottom: 81px;
     gap: 46.73px;
     grid-template-columns: repeat(1, 347.8px);
   }
-  .subscription {
+  .footer .subscription {
     padding-top: 64px;
     padding-bottom: 110px;
     gap: 59px;
     grid-template-columns: repeat(1, 343px);
   }
-  .subscription__text {
+  .footer .subscription__quote .subscription__text {
     font-size: 18px;
   }
-  .subscription__text__italic {
+  .footer .subscription__quote .subscription__text__italic {
     font-size: 18px;
   }
-  .subscription__title {
+  .footer .subscription__content .subscription__title {
     font-size: 24px;
   }
-  .subscription__subtitle {
+  .footer .subscription__content .subscription__subtitle {
     font-size: 14px;
   }
-  .subscription__email {
+  .footer .subscription__content .subscription__form .subscription__email {
     width: 243px;
     height: 47px;
   }
-  .subscription__button {
+  .footer .subscription__content .subscription__form .subscription__button {
     width: 95.8px;
     height: 47px;
   }
-  .contacts {
+  .footer .contacts {
     padding-top: 43px;
     padding-bottom: 9px;
     display: flex;
