@@ -49,6 +49,7 @@
   
   
   .drop__menu {
+    position: relative;
     visibility: hidden;
     opacity: 0;
     z-index: -1;
@@ -65,6 +66,11 @@
     transition: all 0.3s 0.3s;
   }
   
+  .menu__closure {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
   
   .menu__title {
     margin-bottom: 24px;
@@ -425,6 +431,7 @@
   
   .subscription__form {
     text-align: center;
+    position: relative;
   }
   
   .subscription__title {
@@ -446,12 +453,11 @@
   
   .subscription__email {
     box-sizing: border-box;
-    width: 256px;
+    width: 356px;
     height: 49px;
     background-color: #e1e1e1;
     border: none;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-radius: 25px;
     padding-left: 22px;
     padding-top: 7px;
     padding-bottom: 6px;
@@ -479,6 +485,9 @@
     font-size: 14px;
     font-weight: 400;
     transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   
   .subscription__button:hover {
