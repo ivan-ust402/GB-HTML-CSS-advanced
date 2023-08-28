@@ -843,6 +843,7 @@ summary::-webkit-details-marker {
     height: 132px;
 
     .filter {
+      cursor: pointer;
       padding: 13px 16px 16px;
       width: 360px;
       position: absolute;
@@ -876,6 +877,7 @@ summary::-webkit-details-marker {
 
       &__content {
         &__item {
+          cursor: pointer;
           margin-top: 16px;
           &__heading {
             border-bottom: 1px solid #EBEBEB;
@@ -906,6 +908,71 @@ summary::-webkit-details-marker {
               &:hover {
                 color: $colorSelectSite;
               }
+            }
+          }
+        }
+      }
+    }
+
+    .sort {
+      cursor: pointer;
+      position: absolute;
+      left: 390px;
+      top: 32px;
+      padding-top: 13px;
+      padding-bottom: 16px;
+      z-index: 10;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      gap: 28px;
+
+      .sort__details {
+        position: relative;
+        .sort__summary {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          &__heading {
+            color: #6F6E6E;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+        .sort__content {
+          position: absolute;
+          margin-left: -9px;
+          margin-top: 5px;
+          background-color: $colorBackgroundSecond;
+          box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+          padding-top: 9px;
+          padding-left: 9px;
+          padding-right: 30px;
+          padding-bottom: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+
+          &__item {
+            display: flex;
+            flex-direction: row;
+            gap: 9px;
+            color: #6F6E6E;
+            // font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            
+            .chb {
+              opacity: 0.3;
+            }
+
+            .chb-range {
+              accent-color: $colorSelectSite;
+            }
+
+            .chb:checked {
+              opacity: 1;
+              accent-color: $colorSelectSite;
             }
           }
         }

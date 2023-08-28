@@ -727,6 +727,7 @@ summary::-webkit-details-marker {
   height: 132px;
 }
 .catalog .filter-sort .filter {
+  cursor: pointer;
   padding: 13px 16px 16px;
   width: 360px;
   position: absolute;
@@ -755,6 +756,7 @@ summary::-webkit-details-marker {
   font-weight: 600;
 }
 .catalog .filter-sort .filter__content__item {
+  cursor: pointer;
   margin-top: 16px;
 }
 .catalog .filter-sort .filter__content__item__heading {
@@ -786,6 +788,64 @@ summary::-webkit-details-marker {
 }
 .catalog .filter-sort .filter__content__item__link-box__link:hover {
   color: #f16d7f;
+}
+.catalog .filter-sort .sort {
+  cursor: pointer;
+  position: absolute;
+  left: 390px;
+  top: 32px;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  z-index: 10;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+}
+.catalog .filter-sort .sort .sort__details {
+  position: relative;
+}
+.catalog .filter-sort .sort .sort__details .sort__summary {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.catalog .filter-sort .sort .sort__details .sort__summary__heading {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+}
+.catalog .filter-sort .sort .sort__details .sort__content {
+  position: absolute;
+  margin-left: -9px;
+  margin-top: 5px;
+  background-color: #fff;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  padding-top: 9px;
+  padding-left: 9px;
+  padding-right: 30px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.catalog .filter-sort .sort .sort__details .sort__content__item {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+}
+.catalog .filter-sort .sort .sort__details .sort__content__item .chb {
+  opacity: 0.3;
+}
+.catalog .filter-sort .sort .sort__details .sort__content__item .chb-range {
+  accent-color: #f16d7f;
+}
+.catalog .filter-sort .sort .sort__details .sort__content__item .chb:checked {
+  opacity: 1;
+  accent-color: #f16d7f;
 }
 .catalog .items__block {
   display: grid;
