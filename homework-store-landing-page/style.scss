@@ -581,11 +581,22 @@ button:hover {
       left: 0;
       z-index: 2;
     }
+
+    .left__arrow__button:hover > svg path {
+      fill: #F16D7F;
+    }
     .rigth__arrow__button {
       position: absolute;
       top: 50%;
       right: 0;
       z-index: 2;
+      svg path {
+        fill: black;
+      }
+    }
+
+    .rigth__arrow__button:hover > svg path {
+      fill: #F16D7F;
     }
   }
 
@@ -636,25 +647,63 @@ button:hover {
   &__secondline {
     margin-bottom: 65px;
   }
-  .selection__params {
+
+  .selection-params {
     display: flex;
-    gap: 23px;
-    justify-content: center;
-    color: #6f6e6e;
-    font-size: 14px;
-    font-weight: 400;
+    flex-direction: row;
+    gap: 42px;
     margin-bottom: 48px;
-    .selection__block {
-      display: flex;
-      flex-direction: row;
-      gap: 9px;
-      .selection__param {
-        outline: none;
-        border: none;
-        background-color: transparent;
+    &__details {
+      position: relative;
+      cursor: pointer;
+      &__summary {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+        
+      }
+      &__wrapper {
+        margin-top: 5px;
+        position: absolute;
+        background-color: $colorBackgroundSecond;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        padding: 7px 30px 6px 9px;
+
+
+        &__checkbox-block {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 9px;
+          padding-bottom: 6px;
+        }
+
       }
     }
+
+    &__details summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    &__details > summary {
+      list-style: none;
+    }
+
+    &__details > summary::after {
+      content: url('img/slider/DownArrow.svg');
+      padding-left: 10px;
+      position: absolute;
+      top: -3px;
+    }
   }
+
+
+
   &__button {
     border: 1px solid #ff6a6a;
     display: flex;
@@ -662,13 +711,27 @@ button:hover {
     align-items: center;
     background-color: transparent;
     padding: 15px 24px;
+    transition: all .3s;
+
+    &__text {
+      color: #f26376;
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
 
-  &__button__text {
-    color: #f26376;
-    font-size: 16px;
-    font-weight: 400;
+  &__button:hover {
+    background-color: $colorSelectSite;
+    border-color: #ff6a6a;
   }
+  &__button:hover > &__button__text {
+    color: #fff;
+  }
+  &__button:hover > svg path{
+    stroke: #fff;
+    fill: #fff;
+  }
+
 }
 
 .product__items {
@@ -1105,6 +1168,18 @@ button:hover {
   }
 }
 
+.product__items {
+  padding-bottom: 128px;
+  padding-top: 128px;
+  background: $colorBackgroundSecond;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 35px;
+  }
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 187.5px);
@@ -1312,6 +1387,17 @@ button:hover {
       justify-content: center;
       align-items: center;
       background-color: #222224;
+    }
+  }
+
+  .product__items {
+    padding-bottom: 128px;
+    padding-top: 128px;
+    background: $colorBackgroundSecond;
+  
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(1, 360px);
     }
   }
 }
