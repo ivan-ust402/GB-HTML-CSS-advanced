@@ -19,6 +19,14 @@ button:hover {
   cursor: pointer;
 }
 
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .center {
   padding-left: calc(50% - 575px);
   padding-right: calc(50% - 575px);
@@ -711,49 +719,73 @@ button:hover {
 }
 
 .catalog {
-  padding-top: 51px;
   padding-bottom: 96px;
   background-color: #fff;
 }
-.catalog .switches {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, 360px);
-  margin-bottom: 64px;
+.catalog .filter-sort {
+  position: relative;
+  height: 132px;
 }
-.catalog .switches .filter {
+.catalog .filter-sort .filter {
+  padding: 13px 16px 16px;
+  width: 360px;
+  position: absolute;
+  top: 32px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+.catalog .filter-sort .filter[open] {
+  background-color: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.catalog .filter-sort .filter[open] .filter__heading {
+  color: #f16d7f;
+}
+.catalog .filter-sort .filter[open] path {
+  fill: #f16d7f;
+}
+.catalog .filter-sort .filter__summary {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 11px;
+}
+.catalog .filter-sort .filter__heading {
+  color: #000;
   font-size: 14px;
   font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
 }
-.catalog .switches .filter__name {
-  color: #000;
+.catalog .filter-sort .filter__content__item {
+  margin-top: 16px;
 }
-.catalog .switches .filter__name:hover {
-  color: #3a3939;
-}
-.catalog .switches .sort {
-  display: flex;
-  flex-direction: row;
-  gap: 28px;
-  color: #6f6e6e;
+.catalog .filter-sort .filter__content__item__heading {
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 5px solid #EF5B70;
+  color: #6F6E6E;
   font-size: 14px;
   font-weight: 400;
+  line-height: 17px;
+  padding-top: 8px;
+  padding-bottom: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
 }
-.catalog .switches .sort__block {
+.catalog .filter-sort .filter__content__item[open] .filter__content__item__heading {
+  color: #EF5B70;
+}
+.catalog .filter-sort .filter__content__item__link-box {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  cursor: pointer;
+  flex-direction: column;
+  gap: 11px;
+  padding: 24px 16px;
+}
+.catalog .filter-sort .filter__content__item__link-box__link {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
   transition: all 0.3s;
 }
-.catalog .switches .sort__block:hover {
-  color: #3a3939;
+.catalog .filter-sort .filter__content__item__link-box__link:hover {
+  color: #f16d7f;
 }
 .catalog .items__block {
   display: grid;
