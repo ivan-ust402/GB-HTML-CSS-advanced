@@ -317,6 +317,7 @@ button:hover {
   padding-bottom: 104px;
   background: #222;
   display: flex;
+  align-items: center;
   gap: 30px;
   color: #fbfbfb;
 }
