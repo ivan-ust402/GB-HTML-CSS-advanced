@@ -1042,7 +1042,7 @@ summary::-webkit-details-marker {
     margin-bottom: 73px;
   }
   .items__content {
-    grid-template-columns: repeat(2, 360px);
+    grid-template-columns: repeat(3, 292px);
     gap: 16px;
     margin-bottom: 32.5px;
   }
@@ -1090,7 +1090,7 @@ summary::-webkit-details-marker {
 }
 .product__items__content {
   display: grid;
-  grid-template-columns: repeat(2, 360px);
+  grid-template-columns: repeat(3, 360px);
   gap: 35px;
 }
 
