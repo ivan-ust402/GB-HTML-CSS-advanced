@@ -960,6 +960,96 @@ summary::-webkit-details-marker {
   margin-left: -15px;
 }
 
+.cart {
+  display: flex;
+  flex-direction: row;
+  gap: 128px;
+}
+.cart__goods {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.cart__goods__items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cart__goods__items__item {
+  width: 652px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  background-color: #fff;
+}
+.cart__goods__items__item__info {
+  width: 262px;
+  box-sizing: border-box;
+  padding-left: 31px;
+  padding-top: 22px;
+  padding-bottom: 62px;
+  padding-right: 30px;
+  margin-right: 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.cart__goods__items__item__info .info_heading {
+  color: #222;
+  font-size: 24px;
+  font-weight: 400;
+}
+.cart__goods__items__item__info .info_content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cart__goods__items__item__info .info_content__item {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.cart__goods__items__item__info .info_content__item__name {
+  color: #575757;
+  font-size: 22px;
+  font-weight: 400;
+}
+.cart__goods__items__item__info .info_content__item__price {
+  color: #EF5B70;
+  font-size: 22px;
+  font-weight: 400;
+}
+.cart__goods__items__item__info .info_content__item__value {
+  color: #6F6E6E;
+  font-size: 22px;
+  font-weight: 400;
+}
+.cart__goods__items__item__info .info_content__item__quantity {
+  color: #656565;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #EAEAEA;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+.cart__goods__items__item__closure {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+}
+.cart__goods__controls {
+  display: flex;
+  flex-direction: row;
+}
+.cart__order {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+}
+
 @media (max-width: 1440px) {
   .header__rigth .drop__content .drop__menu {
     left: auto;
