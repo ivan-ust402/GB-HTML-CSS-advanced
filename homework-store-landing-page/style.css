@@ -481,6 +481,18 @@ summary::-webkit-details-marker {
   color: #636363;
   font-size: 14px;
 }
+.top-head .breadcrumbs__ul {
+  list-style-type: none;
+  display: flex;
+}
+.top-head .breadcrumbs__li:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #636363;
+  font-size: 14px;
+  font-weight: 300;
+}
 .top-head .breadcrumbs__link {
   color: #636363;
   font-size: 14px;

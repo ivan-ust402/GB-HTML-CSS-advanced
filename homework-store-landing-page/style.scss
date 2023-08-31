@@ -631,16 +631,29 @@ summary::-webkit-details-marker {
   .breadcrumbs {
     color: #636363;
     font-size: 14px;
+    &__ul {
+      list-style-type: none; 
+      display: flex;
+    } 
+
+    &__li:not(:last-child)::after {
+       content: '/';
+       padding-left: 8px;
+       padding-right: 8px;
+       color: #636363;
+       font-size: 14px;
+       font-weight: 300; 
+    }
+
     &__link {
       color: #636363;
       font-size: 14px;
       font-weight: 300;
-    }
-
-    &__link__site {
-      color: $colorSelectSite;
-      font-size: 14px;
-      font-weight: 700;
+      &__site {
+        color: $colorSelectSite;
+        font-size: 14px;
+        font-weight: 700;
+      }
     }
   }
 }
