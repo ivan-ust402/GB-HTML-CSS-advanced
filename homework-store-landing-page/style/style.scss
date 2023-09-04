@@ -302,98 +302,14 @@
   
       &__recepient {
         padding-top: 0px;
-        &__heading {
-          margin-bottom: 20px;
-          color: #222;
-          font-size: 16px;
-          font-weight: 300;
-        }
         &__form {
-          display: flex;
-          flex-direction: column;
-          gap: 21px;
-          margin-bottom: 23px;
           .input_item {
-            outline: none;
             width: 360px;
-            box-sizing: border-box;
-            color: #B1B1B1;
-            padding-top: 14px;
-            padding-bottom: 14px;
-            padding-left: 17px;
-            padding-right: 17px;
-            border: 1px solid #A4A4A4;
-            transition: border-color .3s;
-            
           }
-        }
-        .recepient__form__button {
-          border: 1px solid #A4A4A4;
-          padding-top: 12px;
-          padding-bottom: 12px;
-          padding-left: 15px;
-          padding-right: 15px;
-          color: #4A4A4A;
-          font-size: 11px;
-          font-weight: 300;
-          background: $colorBackgroundSecond;
-          transition: color .3s,
-                      border-color .3s;
         }
       }
       &__execute {
-        background-color: #F5F3F3;
         margin-top: 39px;
-        padding-top: 39px;
-        padding-bottom: 42px;
-        padding-left: 44px;
-        padding-right: 44px;
-        &__total_block {
-          margin-bottom: 21px;
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          align-items: flex-end;
-          &__subtotal {
-            color: #4A4A4A;
-            font-size: 11px;
-            font-style: normal;
-            font-weight: 400;
-            display: flex;
-            flex-direction: row;
-            gap: 25px;
-          }
-          &__total {
-            display: flex;
-            flex-direction: row;
-            gap: 25px;
-            .total_label {
-              color: #222;
-              font-size: 16px;
-              font-weight: 300;
-            }
-            .total_value {
-              color: #F16D7F;
-              font-size: 16px;
-              font-weight: 700;
-            }
-          }
-        }
-        &__fulfill {
-          border-top: 1px solid #E2E2E2;
-          padding-top: 17px;
-          .fulfill {
-            color: #fff;
-            background-color: #F16D7F;
-            border: none;
-            padding: 15px 42px;
-            width: 273px;
-            transition: background-color .3s;
-            &:hover {
-                background-color: #d73c3c;
-            }
-          }
-        }
       }
     }
   }
@@ -776,4 +692,119 @@
   }
 
   // cart 
+
+  .top-head_cart {
+    padding: 0;
+    padding: 50px 90px 69px;
+  }
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 39px;
+    padding-bottom: 96px;
+    padding-left: 7px;
+    padding-right: 7px;
+    align-items: center;
+  
+    &__goods {
+      gap: 30px;
+      &__items {
+        align-items: center;
+        gap: 32px;
+        &__item {
+          width: 360px;
+          display: flex;
+          flex-direction: row;
+          gap: 17px;
+
+
+          &>img {
+            width: 144px;
+            height: 188px;
+          }
+
+          &__info {
+            width: 214px;
+            padding-left: 0px;
+            padding-top: 14px;
+            padding-bottom: 38px;
+            padding-right: 0px;
+            margin-right: 58px;
+            gap: 26px;
+
+            .info_heading {
+              font-size: 16px;
+            }
+            .info_content {
+              gap: 3px;
+
+              &__item {
+                &__name {
+                  font-size: 14px;
+                }
+              
+                &__price {
+                  font-size: 14px;
+                }
+  
+                &__value {
+                  font-size: 14px;
+                }
+  
+                &__quantity {
+                  width: 24px;
+                  font-size: 10px;
+                  padding-left: 9px;
+                  padding-right: 9px;
+                  padding-top: 1px;
+                  padding-bottom: 1px;
+                }
+              } 
+            }  
+          }
+
+          &__closure {
+            top: 18px;
+            right: 12px;
+            &>svg {
+              width: 9.883px;
+              height: 11.059px;
+            }
+          }
+        }
+      }
+  
+      &__controls {
+        gap: 9px;
+
+        &__button {
+          font-size: 12px;
+          padding: 9px 18px;
+          box-sizing: border-box;
+          width: 175px;
+          text-align: center;
+        }
+      }
+    }
+  
+    &__order {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      width: 360px;
+  
+      &__recepient {
+        &__form {
+          .input_item {
+            width: 360px;
+          }
+        }
+      }
+      &__execute {
+        margin-top: 0px;
+      }
+    }
+  }
 }
