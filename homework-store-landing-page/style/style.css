@@ -367,19 +367,37 @@ summary::-webkit-details-marker {
   font-size: 13.972px;
   font-weight: 300;
 }
-.footer .subscription {
-  background-image: url("../img/footer/subscription/photo subscribe.jpg");
+.footer .subscription__wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer .subscription__wrap::after {
+  content: "";
+  background: rgba(244, 244, 244, 0.7);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.footer .subscription__wrap .subscription {
+  background-image: url("../img/footer/subscription/photo_subscribe.jpg");
   background-size: cover;
+  background-color: rgba(244, 244, 244, 0.7);
   padding-top: 97px;
   padding-bottom: 126px;
   display: grid;
   gap: 327px;
   grid-template-columns: repeat(2, 360px);
 }
-.footer .subscription__quote {
+.footer .subscription__wrap .subscription__quote {
   text-align: center;
+  z-index: 2;
 }
-.footer .subscription__quote .subscription__text {
+.footer .subscription__wrap .subscription__quote .subscription__text {
   margin-top: 30px;
   width: 360px;
   height: 99px;
@@ -388,16 +406,17 @@ summary::-webkit-details-marker {
   font-size: 20px;
   font-weight: 400;
 }
-.footer .subscription__quote .subscription__text__italic {
+.footer .subscription__wrap .subscription__quote .subscription__text__italic {
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
 }
-.footer .subscription__content {
+.footer .subscription__wrap .subscription__content {
   text-align: center;
   position: relative;
+  z-index: 2;
 }
-.footer .subscription__content .subscription__title {
+.footer .subscription__wrap .subscription__content .subscription__title {
   color: #000;
   text-align: center;
   font-size: 24px;
@@ -405,17 +424,17 @@ summary::-webkit-details-marker {
   line-height: 167.2%; /* 40.128px */
   margin-top: 53px;
 }
-.footer .subscription__content .subscription__subtitle {
+.footer .subscription__wrap .subscription__content .subscription__subtitle {
   color: #000;
   font-size: 18px;
   font-weight: 400;
   line-height: 167.2%;
   margin-bottom: 32px;
 }
-.footer .subscription__content .subscription__form {
+.footer .subscription__wrap .subscription__content .subscription__form {
   position: relative;
 }
-.footer .subscription__content .subscription__form .subscription__email {
+.footer .subscription__wrap .subscription__content .subscription__form .subscription__email {
   box-sizing: border-box;
   width: 356px;
   height: 49px;
@@ -431,7 +450,7 @@ summary::-webkit-details-marker {
   opacity: 0.671;
   outline: none;
 }
-.footer .subscription__content .subscription__form .subscription__button {
+.footer .subscription__wrap .subscription__content .subscription__form .subscription__button {
   box-sizing: border-box;
   width: 100px;
   height: 49px;
@@ -452,7 +471,7 @@ summary::-webkit-details-marker {
   top: 0;
   right: 0;
 }
-.footer .subscription__content .subscription__form .subscription__button:hover {
+.footer .subscription__wrap .subscription__content .subscription__form .subscription__button:hover {
   background-color: #d73c3c;
 }
 .footer .contacts {
@@ -1484,7 +1503,7 @@ summary::-webkit-details-marker {
     justify-content: center;
     grid-template-columns: repeat(1, 360px);
   }
-  .footer .subscription {
+  .footer .subscription__wrap .subscription {
     padding-top: 64px;
     padding-bottom: 140px;
     gap: 48px;
@@ -1622,6 +1641,9 @@ summary::-webkit-details-marker {
     padding-top: 40px;
     padding-bottom: 96px;
   }
+  .registration .loyality {
+    width: 354px;
+  }
   .registration .loyality__header {
     margin-bottom: 32px;
     font-size: 16px;
@@ -1755,29 +1777,29 @@ summary::-webkit-details-marker {
     gap: 46.73px;
     grid-template-columns: repeat(1, 347.8px);
   }
-  .footer .subscription {
+  .footer .subscription__wrap .subscription {
     padding-top: 64px;
     padding-bottom: 110px;
     gap: 59px;
     grid-template-columns: repeat(1, 343px);
   }
-  .footer .subscription__quote .subscription__text {
+  .footer .subscription__wrap .subscription__quote .subscription__text {
     font-size: 18px;
   }
-  .footer .subscription__quote .subscription__text__italic {
+  .footer .subscription__wrap .subscription__quote .subscription__text__italic {
     font-size: 18px;
   }
-  .footer .subscription__content .subscription__title {
+  .footer .subscription__wrap .subscription__content .subscription__title {
     font-size: 24px;
   }
-  .footer .subscription__content .subscription__subtitle {
+  .footer .subscription__wrap .subscription__content .subscription__subtitle {
     font-size: 14px;
   }
-  .footer .subscription__content .subscription__form .subscription__email {
+  .footer .subscription__wrap .subscription__content .subscription__form .subscription__email {
     width: 243px;
     height: 47px;
   }
-  .footer .subscription__content .subscription__form .subscription__button {
+  .footer .subscription__wrap .subscription__content .subscription__form .subscription__button {
     width: 95.8px;
     height: 47px;
   }
@@ -2000,5 +2022,28 @@ summary::-webkit-details-marker {
   }
   .cart__order__execute {
     margin-top: 0px;
+  }
+  .registration {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .registration .loyality {
+    width: 358px;
+  }
+  .registration .loyality__header {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  .registration .loyality__text {
+    margin-bottom: 22px;
+    font-size: 16px;
+  }
+  .registration .loyality__ul {
+    gap: 26px;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
