@@ -1,3 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.center {
+  padding-left: calc(50% - 575px);
+  padding-right: calc(50% - 575px);
+}
+
+.box-content {
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 384px);
+    padding-right: calc(50% - 384px);
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+  }
+}
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -318,7 +368,7 @@
   font-weight: 300;
 }
 .footer .subscription {
-  background-image: url("img/footer/subscription/photo subscribe.jpg");
+  background-image: url("../img/footer/subscription/photo subscribe.jpg");
   background-size: cover;
   padding-top: 97px;
   padding-bottom: 126px;
@@ -1328,44 +1378,6 @@
   margin-right: 23px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-summary {
-  display: block;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-.center {
-  padding-left: calc(50% - 575px);
-  padding-right: calc(50% - 575px);
-}
-
-.box-content {
-  overflow: hidden;
-}
-
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 384px);
@@ -1443,7 +1455,7 @@ summary::-webkit-details-marker {
     margin-bottom: 73px;
   }
   .items__content {
-    grid-template-columns: repeat(3, 292px);
+    grid-template-columns: repeat(2, 360px);
     gap: 16px;
     margin-bottom: 32.5px;
   }
@@ -1483,15 +1495,21 @@ summary::-webkit-details-marker {
     align-items: center;
     background-color: #222;
   }
+  .product__slider__description {
+    display: block;
+  }
+  .product__slider__description__wrapper {
+    margin-top: -4px;
+  }
   .product__items {
     padding-bottom: 128px;
     padding-top: 128px;
     background: #fff;
   }
   .product__items__content {
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    gap: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 767px) {

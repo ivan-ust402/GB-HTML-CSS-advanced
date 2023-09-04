@@ -1,3 +1,4 @@
+@import 'static/general';
 @import 'static/vars.scss';
 @import 'static/header';
 @import 'static/for-index';
@@ -9,43 +10,7 @@
 @import 'static/registration';
 
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: "Lato", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-summary {
-  display: block;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-.center {
-  padding-left: calc(50% - 575px);
-  padding-right: calc(50% - 575px);
-}
-
-.box-content {
-  overflow: hidden;
-}
 
 
 
@@ -146,7 +111,7 @@ summary::-webkit-details-marker {
     }
 
     &__content {
-      grid-template-columns: repeat(3, 292px);
+      grid-template-columns: repeat(2, 360px);
       gap: 16px;
       margin-bottom: 32.5px;
 
@@ -197,15 +162,25 @@ summary::-webkit-details-marker {
       background-color: $colorBackgroundFirst;
     }
   }
+
+  .product__slider {
+    &__description {
+      display: block;
+      &__wrapper {
+        margin-top: -4px;
+      }
+    }
+  }
+
   .product__items {
     padding-bottom: 128px;
     padding-top: 128px;
     background: $colorBackgroundSecond;
   
     &__content {
-      display: grid;
-      grid-template-columns: repeat(3, 360px);
-      gap: 35px;
+      display: flex;
+      flex-direction: row-reverse;
+      overflow-x: hidden;
     }
   }
 }
