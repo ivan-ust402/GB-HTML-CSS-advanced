@@ -313,6 +313,31 @@
       }
     }
   }
+
+  // registration
+
+  .registration {
+    gap: 22.5px;
+    padding-top: 40px;
+    padding-bottom: 96px;
+    .loyality {
+  
+      &__header {
+        margin-bottom: 32px;
+        font-size: 16px;
+      }
+  
+      &__text {
+        margin-bottom: 22px;
+        font-size: 16px;
+      }
+  
+      &__ul {
+        gap: 26px;
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 
@@ -807,4 +832,8 @@
       }
     }
   }
+
+  // registration 
+
+
 }
