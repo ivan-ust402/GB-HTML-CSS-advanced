@@ -216,7 +216,10 @@
       }
       .sort {
         top: 24px;
+        left: 456px;
+        right: -100px;
         padding: 0;
+        padding-right: 16px;
       }
     }
     .items__block {
@@ -556,4 +559,85 @@
   }
 
   // Catalog page
+
+  .catalog {
+    .filter-sort {
+      height: 81px;
+      .filter {
+        top: 26px;
+        padding: 0;
+        padding-left: 8px;
+        &__heading {
+          display: none;
+        }
+        &__summary>svg {
+          width: 37.5px;
+          height: 25px;
+        }
+      }
+
+      .sort {
+        top: 26px;
+        left: 107px;
+        right: -100px;
+        padding: 0;
+        padding-right: 8px;
+        
+        .sort__details {
+          .sort__summary {
+            &__heading {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    } 
+    .items__block {
+      display: grid;
+      grid-template-columns: repeat(1, 360px);
+      grid-template-rows: repeat(8, 1fr);
+      gap: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      grid-template-areas: 
+        "item1" 
+        "item2"
+        "item4"
+        "item5"
+        "item6" 
+        "item7"
+        "item8" 
+        "item9";
+      .item {
+        padding-right: 17px;
+      }
+      .item1 {
+        grid-area: item1;
+      }
+      .item2 {
+        grid-area: item2;
+      }
+      .item3 {
+        display: none;
+      }
+      .item4 {
+        grid-area: item4;
+      }
+      .item5 {
+        grid-area: item5;
+      }
+      .item6 {
+        grid-area: item6;
+      }
+      .item7 {
+        grid-area: item7;
+      }
+      .item8 {
+        grid-area: item8;
+      }
+      .item9 {
+        grid-area: item9;
+      }
+    }
+  }
 }
