@@ -15,10 +15,19 @@
 
 
 @media (max-width: 1024px) {
+
   .center {
     padding-left: calc(50% - 384px);
     padding-right: calc(50% - 384px);
   }
+
+  // index page
+
+  .header {
+    padding-left: 32px;
+    padding-right: 36px;
+  }
+
   .top {
     gap: 39px;
 
@@ -163,6 +172,18 @@
     }
   }
 
+  // Product page
+  .top-head {
+    background-color: #f8f3f4;
+    padding-top: 59px;
+    padding-bottom: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .product__slider {
     &__description {
       display: block;
@@ -183,6 +204,62 @@
       overflow-x: hidden;
     }
   }
+
+  // catalog page
+  .catalog {
+    .filter-sort {
+      height: 81px;
+      .filter {
+        top: 24px;
+        padding: 0;
+        padding-left: 16px;
+      }
+      .sort {
+        top: 24px;
+        padding: 0;
+      }
+    }
+    .items__block {
+      display: grid;
+      grid-template-columns: repeat(2, 360px);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      grid-template-areas: 
+        "item1 item2"
+        "item4 item5"
+        "item6 item7"
+        "item8 item9";
+      .item1 {
+        grid-area: item1;
+      }
+      .item2 {
+        grid-area: item2;
+      }
+      .item3 {
+        display: none;
+      }
+      .item4 {
+        grid-area: item4;
+      }
+      .item5 {
+        grid-area: item5;
+      }
+      .item6 {
+        grid-area: item6;
+      }
+      .item7 {
+        grid-area: item7;
+      }
+      .item8 {
+        grid-area: item8;
+      }
+      .item9 {
+        grid-area: item9;
+      }
+    }
+  }
 }
 
 
@@ -193,6 +270,8 @@
     padding-left: calc(50% - 187.5px);
     padding-right: calc(50% - 187.5px);
   }
+
+  // index page
 
   .header {
     &__left {
@@ -409,6 +488,8 @@
     }
   }
 
+  // Product page
+
   .top-head {
     background-color: #f8f3f4;
     padding-top: 24px;
@@ -473,4 +554,6 @@
       overflow: hidden;
     }
   }
+
+  // Catalog page
 }
