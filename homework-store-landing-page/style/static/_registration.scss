@@ -173,10 +173,12 @@
       }
   
       &__li {
+        display: flex;
         &::before {
           content: url('../img/registration/check.svg');
           margin-right: 23px;
         }
       }
+
     }
   }

@@ -67,9 +67,9 @@
     }
   
     &__text {
-      max-width: 555px;
+      max-width: 554px;
       color: #5e5e5e;
-      text-align: center;
+      text-align:center;
       font-size: 14px;
       font-weight: 300;
       margin-bottom: 32px;
@@ -235,6 +235,7 @@
   
         &__description {
           padding-left: 16px;
+          padding-right: 16px;
   
           .item__title {
             color: $colorTitleBasic;
