@@ -8,6 +8,7 @@
   }
   
   a {
+    font-family: "Lato", sans-serif;
     text-decoration: none;
   }
   
@@ -15,8 +16,16 @@
     cursor: pointer;
   }
   
+  button {
+    font-family: "Lato", sans-serif;
+  }
+
   button:hover {
     cursor: pointer;
+  }
+
+  input {
+    font-family: "Lato", sans-serif;
   }
   
   summary {

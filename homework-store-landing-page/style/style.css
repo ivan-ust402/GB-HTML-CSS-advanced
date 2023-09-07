@@ -8,6 +8,7 @@ body {
 }
 
 a {
+  font-family: "Lato", sans-serif;
   text-decoration: none;
 }
 
@@ -15,8 +16,16 @@ a:hover {
   cursor: pointer;
 }
 
+button {
+  font-family: "Lato", sans-serif;
+}
+
 button:hover {
   cursor: pointer;
+}
+
+input {
+  font-family: "Lato", sans-serif;
 }
 
 summary {
@@ -1354,19 +1363,17 @@ summary::-webkit-details-marker {
 }
 .registration .registration-form-block .registration-button {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   padding: 16px 21px 17px 29px;
   background-color: #f16d7f;
   box-sizing: border-box;
   width: 167px;
   align-items: center;
   border: none;
-  transition: background-color 0.3s;
-}
-.registration .registration-form-block .registration-button__text {
   color: #FFF;
   font-size: 14px;
   font-weight: 400;
+  transition: background-color 0.3s;
 }
 .registration .registration-form-block .registration-button:hover {
   background-color: #d73c3c;
