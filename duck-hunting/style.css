@@ -1,11 +1,107 @@
-html {
+@keyframes duck-fly-1 {
+  0% {
+    left: -70px;
+    top: 29vh;
+  }
+  50% {
+    left: 42vw;
+    top: 38vh;
+  }
+  100% {
+    left: 100vw;
+    top: 53vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -70px;
+    top: 47vh;
+  }
+  50% {
+    left: 11vw;
+    top: 83vh;
+  }
+  100% {
+    left: 100vw;
+    top: 42vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -70px;
+    top: 11vh;
+  }
+  50% {
+    left: 9vw;
+    top: 85vh;
+  }
+  100% {
+    left: 100vw;
+    top: 58vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -70px;
+    top: 64vh;
+  }
+  50% {
+    left: 57vw;
+    top: 59vh;
+  }
+  100% {
+    left: 100vw;
+    top: 44vh;
+  }
+}
+body {
   counter-reset: count;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/shooting-game.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
+.duck-check {
+  position: absolute;
+  visibility: hidden;
+  left: -9999999px;
+}
 .duck-check:checked {
   counter-increment: count;
 }
+.duck-check:checked ~ label {
+  display: none;
+}
 
+.counter-info {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+}
 .counter-info::before {
-  content: "5";
+  content: counter(count);
+}
+
+.duck {
+  position: absolute;
+}
+.duck__img {
+  width: 70px;
+}
+.duck_1 {
+  animation: duck-fly-1 5s ease-in 1s both;
+}
+.duck_2 {
+  animation: duck-fly-2 5s ease-in 2s both;
+}
+.duck_3 {
+  animation: duck-fly-3 5s ease-in 3s both;
+}
+.duck_4 {
+  animation: duck-fly-4 5s ease-in 4s both;
 }/*# sourceMappingURL=style.css.map */
